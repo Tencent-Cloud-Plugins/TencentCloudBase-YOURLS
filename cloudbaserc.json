@@ -1,0 +1,56 @@
+{
+  "version": "2.0",
+  "envId": "{{env.ENV_ID}}",
+  "framework": {
+    "name": "YOURLS",
+    "plugins": {
+      "client": {
+        "use": "@cloudbase/framework-plugin-container",
+        "inputs": {
+          "serviceName": "yourls",
+          "servicePath": "/admin",
+          "uploadType": "image",
+          "imageInfo": {
+            "imageUrl": "ccr.ccs.tencentyun.com/tcb-yourls/yourls-tcb:1.8.1"
+          },
+          "containerPort": 8080,
+          "envVariables": {
+            "YOURLS_DB_HOST": "{{nv.DB_IP}}:{{env.DB_PORT}}",
+            "YOURLS_DB_NAME": "tcb-yourls",
+            "YOURLS_DB_USER": "root",
+            "YOURLS_DB_PASS": "{{env.MYSQL_PASSWORD}}",
+            "YOURLS_SITE": "https://hello-nodebb-3glii5ovf680e9fa-1255372115.ap-shanghai.app.tcloudbase.com",
+            "YOURLS_USER": "{{env.YOURLS_USER}}",
+            "YOURLS_PASS": "{{env.YOURLS_PASS}}"
+          }
+        }
+      }
+    },
+    "requirement": {
+      "addons": [
+        {
+          "type": "CynosDB",
+          "name": "yourls",
+          "envMap": {
+            "IP": "DB_IP",
+            "PORT": "DB_PORT",
+            "USERNAME": "MYSQL_USERNAME",
+            "PASSWORD": "MYSQL_PASSWORD"
+          }
+        }
+      ],
+      "environment": {
+        "YOURLS_USER": {
+          "description": "用户账号",
+          "required": true,
+          "default": "admin"
+        },
+        "YOURLS_PASS": {
+          "description": "用户密码",
+          "required": true,
+          "default": ""
+        }
+      }
+    }
+  }
+}
