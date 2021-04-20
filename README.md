@@ -15,7 +15,7 @@ YOURLS是一款开源免费的URL短链接管理平台，可利用它构建URL�
 ### 配置
 - `YOURLS_DB_HOST`: 数据库地址
 - `YOURLS_DB_NAME`: 数据库名称
-- `YOURLS_DB_USER`: 数据库账号
+- `YOURLS_DB_USER`: 数据库用户名
 - `YOURLS_DB_PASS`：数据库密码
 - `YOURLS_SITE`：应用站点
 - `YOURLS_USER`：用户账号
