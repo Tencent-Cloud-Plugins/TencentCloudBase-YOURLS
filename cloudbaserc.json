@@ -8,8 +8,9 @@
         "use": "@cloudbase/framework-plugin-container",
         "inputs": {
           "serviceName": "yourls",
-          "servicePath": "/",
-          "localPath": "./admin",
+          "servicePath": "/admin",
+          "localPath": "/admin",
+          "buildDir": "/admin",
           "uploadType": "image",
           "imageInfo": {
             "imageUrl": "ccr.ccs.tencentyun.com/tcb-yourls/yourls-tcb:1.18.1"
