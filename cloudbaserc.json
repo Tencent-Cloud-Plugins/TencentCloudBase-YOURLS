@@ -15,7 +15,7 @@
           },
           "containerPort": 8080,
           "envVariables": {
-            "YOURLS_DB_HOST": "{{nv.DB_IP}}:{{env.DB_PORT}}",
+            "YOURLS_DB_HOST": "{{env.DB_IP}}:{{env.DB_PORT}}",
             "YOURLS_DB_NAME": "tcb-yourls",
             "YOURLS_DB_USER": "root",
             "YOURLS_DB_PASS": "{{env.MYSQL_PASSWORD}}",
@@ -48,7 +48,7 @@
         "YOURLS_PASS": {
           "description": "用户密码",
           "required": true,
-          "default": ""
+          "default": "yourls@123"
         }
       }
     }
