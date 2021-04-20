@@ -9,6 +9,7 @@
         "inputs": {
           "serviceName": "yourls",
           "servicePath": "/",
+          "localPath": "./admin",
           "uploadType": "image",
           "imageInfo": {
             "imageUrl": "ccr.ccs.tencentyun.com/tcb-yourls/yourls-tcb:1.18.1"
