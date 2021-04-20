@@ -8,7 +8,7 @@
         "use": "@cloudbase/framework-plugin-container",
         "inputs": {
           "serviceName": "yourls",
-          "servicePath": "/admin",
+          "servicePath": "/",
           "localAbsolutePath": "https://hello-nodebb-3glii5ovf680e9fa-1255372115.ap-shanghai.app.tcloudbase.com/admin",
           "buildDir": "/admin",
           "uploadType": "image",
