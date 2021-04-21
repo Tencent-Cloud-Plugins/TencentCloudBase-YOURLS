@@ -18,8 +18,8 @@ YOURLS是一款开源免费的URL短链接管理平台，可利用它构建URL�
 - `YOURLS_DB_USER`: 数据库用户名
 - `YOURLS_DB_PASS`：数据库密码
 - `YOURLS_SITE`：应用站点
-- `YOURLS_USER`：用户账号
-- `YOURLS_PASS`：用户密码
+- `YOURLS_USER`：应用用户账号
+- `YOURLS_PASS`：应用用户密码
 
 ### 依赖
 
