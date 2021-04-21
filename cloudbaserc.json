@@ -11,7 +11,7 @@
           "servicePath": "/",
           "uploadType": "image",
           "imageInfo": {
-            "imageUrl": "ccr.ccs.tencentyun.com/tcb-yourls/yourls-tcb:1.18.1"
+            "imageUrl": "ccr.ccs.tencentyun.com/tcb-yourls/yourls-tcb:1.8.1"
           },
           "containerPort": 80,
           "envVariables": {
