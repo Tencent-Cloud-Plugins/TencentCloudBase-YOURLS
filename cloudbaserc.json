@@ -48,7 +48,7 @@
         "YOURLS_PASS": {
           "description": "用户密码",
           "required": true,
-          "default": "yourls@123"
+          "default": ""
         }
       }
     }
