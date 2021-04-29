@@ -11,7 +11,7 @@
           "servicePath": "/",
           "uploadType": "image",
           "imageInfo": {
-            "imageUrl": "ccr.ccs.tencentyun.com/tcb-yourls/yourls-tcb:1.8.1"
+            "imageUrl": "ccr.ccs.tencentyun.com/tcbimages/yourls-tcb:1.8.1"
           },
           "containerPort": 80,
           "envVariables": {
@@ -19,7 +19,7 @@
             "YOURLS_DB_NAME": "tcb-yourls",
             "YOURLS_DB_USER": "root",
             "YOURLS_DB_PASS": "{{env.MYSQL_PASSWORD}}",
-            "YOURLS_SITE": "https://hello-nodebb-3glii5ovf680e9fa-1255372115.ap-shanghai.app.tcloudbase.com",
+            "YOURLS_SITE": "https://${TcbHttpServiceDefaultDomain}",
             "YOURLS_USER": "{{env.YOURLS_USER}}",
             "YOURLS_PASS": "{{env.YOURLS_PASS}}"
           }
