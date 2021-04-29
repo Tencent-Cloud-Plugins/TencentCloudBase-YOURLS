@@ -48,7 +48,15 @@
         "YOURLS_PASS": {
           "description": "用户密码",
           "required": true,
-          "default": ""
+          "default": "",
+          "validation": {
+            "rule": {
+              "type": "RegExp",
+              "pattern": "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$",
+              "flag": "g"
+            },
+            "errorMessage": "字母和数字的组合，长度范围是 6 ~ 20"
+          }
         }
       }
     }
