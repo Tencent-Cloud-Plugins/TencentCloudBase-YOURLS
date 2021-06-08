@@ -21,8 +21,10 @@
             "YOURLS_DB_PASS": "{{env.MYSQL_PASSWORD}}",
             "YOURLS_SITE": "https://${TcbHttpServiceDefaultDomain}",
             "YOURLS_USER": "{{env.YOURLS_USER}}",
-            "YOURLS_PASS": "{{env.YOURLS_PASS}}"
-          }
+            "YOURLS_PASS": "{{env.YOURLS_PASS}}",
+            "TCB_NOT_SHOW_CYNOS_DB": "${Outputs.yourls.Properties.InstanceId}"
+          },
+          "initialDelaySeconds": 10
         }
       }
     },
